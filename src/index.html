@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Profile Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #55687a;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 1rem;
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #profile {
+            margin-top: 2rem;
+        }
+        .profile-card { 
+            background-color: white;
+            border-radius: 100px, 100px, 100px, 100px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 400px;
+            margin: auto;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            width: 150px;
+            height: 150px;
+        }
+        .profile-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .profile-card p {
+            margin-bottom: 0.5rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center mt-5">
+            <h1>Random Profile Generator</h1>
+            <p class="lead">Generate a random profile with just one click!</p>
+            <button id="generate-btn" class="btn btn-primary mt-3">Generate Profile</button>
+        </div>
+        <div id="profile" class="text-center"></div>
+    </div>
+    <script type="module" src="../dist/bundle.js"></script>
+</body>
+</html>
